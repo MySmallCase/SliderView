@@ -15,6 +15,16 @@
 		1F535C9B1BC1397100BC3A1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F535C991BC1397100BC3A1C /* LaunchScreen.storyboard */; };
 		1F535CA61BC1397100BC3A1C /* SliderViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F535CA51BC1397100BC3A1C /* SliderViewTests.m */; };
 		1F535CB11BC1397100BC3A1C /* SliderViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F535CB01BC1397100BC3A1C /* SliderViewUITests.m */; };
+		1F9DA8C11C4107F900A9162B /* View1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DA8C01C4107F900A9162B /* View1Controller.m */; };
+		1F9DA8C41C41080100A9162B /* View2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DA8C31C41080100A9162B /* View2Controller.m */; };
+		1F9DA8C71C41080900A9162B /* View3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DA8C61C41080900A9162B /* View3Controller.m */; };
+		1FC3067A1C460F68007570E7 /* SlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC306791C460F68007570E7 /* SlideView.m */; };
+		1FC3067E1C46106B007570E7 /* LRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3067D1C46106B007570E7 /* LRUCache.m */; };
+		1FC306821C461120007570E7 /* FixedTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC306811C461120007570E7 /* FixedTabbarView.m */; };
+		1FC306851C4611A5007570E7 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC306841C4611A5007570E7 /* Utility.m */; };
+		1FC306881C4611EB007570E7 /* TabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC306871C4611EB007570E7 /* TabedSlideView.m */; };
+		1FC3068B1C4613A3007570E7 /* ScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3068A1C4613A3007570E7 /* ScrollTabbarView.m */; };
+		1FC3068E1C461423007570E7 /* CustomSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3068D1C461423007570E7 /* CustomSlideView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,28 @@
 		1F535CAC1BC1397100BC3A1C /* SliderViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SliderViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F535CB01BC1397100BC3A1C /* SliderViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderViewUITests.m; sourceTree = "<group>"; };
 		1F535CB21BC1397100BC3A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9DA8BF1C4107F900A9162B /* View1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View1Controller.h; sourceTree = "<group>"; };
+		1F9DA8C01C4107F900A9162B /* View1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1Controller.m; sourceTree = "<group>"; };
+		1F9DA8C21C41080100A9162B /* View2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View2Controller.h; sourceTree = "<group>"; };
+		1F9DA8C31C41080100A9162B /* View2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2Controller.m; sourceTree = "<group>"; };
+		1F9DA8C51C41080900A9162B /* View3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View3Controller.h; sourceTree = "<group>"; };
+		1F9DA8C61C41080900A9162B /* View3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View3Controller.m; sourceTree = "<group>"; };
+		1FC306781C460F68007570E7 /* SlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideView.h; sourceTree = "<group>"; };
+		1FC306791C460F68007570E7 /* SlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideView.m; sourceTree = "<group>"; };
+		1FC3067B1C46100A007570E7 /* CacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheProtocol.h; sourceTree = "<group>"; };
+		1FC3067C1C46106B007570E7 /* LRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUCache.h; sourceTree = "<group>"; };
+		1FC3067D1C46106B007570E7 /* LRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRUCache.m; sourceTree = "<group>"; };
+		1FC3067F1C4610BA007570E7 /* SlideTabbarProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideTabbarProtocol.h; sourceTree = "<group>"; };
+		1FC306801C461120007570E7 /* FixedTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedTabbarView.h; sourceTree = "<group>"; };
+		1FC306811C461120007570E7 /* FixedTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedTabbarView.m; sourceTree = "<group>"; };
+		1FC306831C4611A5007570E7 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		1FC306841C4611A5007570E7 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		1FC306861C4611EB007570E7 /* TabedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabedSlideView.h; sourceTree = "<group>"; };
+		1FC306871C4611EB007570E7 /* TabedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabedSlideView.m; sourceTree = "<group>"; };
+		1FC306891C4613A3007570E7 /* ScrollTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTabbarView.h; sourceTree = "<group>"; };
+		1FC3068A1C4613A3007570E7 /* ScrollTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTabbarView.m; sourceTree = "<group>"; };
+		1FC3068C1C461423007570E7 /* CustomSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSlideView.h; sourceTree = "<group>"; };
+		1FC3068D1C461423007570E7 /* CustomSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSlideView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +133,9 @@
 		1F535C8A1BC1397100BC3A1C /* SliderView */ = {
 			isa = PBXGroup;
 			children = (
+				1F9DA8A31C41023100A9162B /* SliderView */,
+				1F9DA8BD1C4107E400A9162B /* Demo1 */,
+				1F9DA8BE1C4107E400A9162B /* Demo2 */,
 				1F535C8E1BC1397100BC3A1C /* AppDelegate.h */,
 				1F535C8F1BC1397100BC3A1C /* AppDelegate.m */,
 				1F535C911BC1397100BC3A1C /* ViewController.h */,
@@ -138,6 +173,65 @@
 				1F535CB21BC1397100BC3A1C /* Info.plist */,
 			);
 			path = SliderViewUITests;
+			sourceTree = "<group>";
+		};
+		1F9DA8A31C41023100A9162B /* SliderView */ = {
+			isa = PBXGroup;
+			children = (
+				1FC306781C460F68007570E7 /* SlideView.h */,
+				1FC306791C460F68007570E7 /* SlideView.m */,
+				1FC306831C4611A5007570E7 /* Utility.h */,
+				1FC306841C4611A5007570E7 /* Utility.m */,
+				1FC306861C4611EB007570E7 /* TabedSlideView.h */,
+				1FC306871C4611EB007570E7 /* TabedSlideView.m */,
+				1FC3068C1C461423007570E7 /* CustomSlideView.h */,
+				1FC3068D1C461423007570E7 /* CustomSlideView.m */,
+				1FC306761C460F0B007570E7 /* Cache */,
+				1FC306771C460F0B007570E7 /* TabbarView */,
+			);
+			path = SliderView;
+			sourceTree = "<group>";
+		};
+		1F9DA8BD1C4107E400A9162B /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				1F9DA8BF1C4107F900A9162B /* View1Controller.h */,
+				1F9DA8C01C4107F900A9162B /* View1Controller.m */,
+				1F9DA8C21C41080100A9162B /* View2Controller.h */,
+				1F9DA8C31C41080100A9162B /* View2Controller.m */,
+				1F9DA8C51C41080900A9162B /* View3Controller.h */,
+				1F9DA8C61C41080900A9162B /* View3Controller.m */,
+			);
+			path = Demo1;
+			sourceTree = "<group>";
+		};
+		1F9DA8BE1C4107E400A9162B /* Demo2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Demo2;
+			sourceTree = "<group>";
+		};
+		1FC306761C460F0B007570E7 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3067B1C46100A007570E7 /* CacheProtocol.h */,
+				1FC3067C1C46106B007570E7 /* LRUCache.h */,
+				1FC3067D1C46106B007570E7 /* LRUCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		1FC306771C460F0B007570E7 /* TabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3067F1C4610BA007570E7 /* SlideTabbarProtocol.h */,
+				1FC306801C461120007570E7 /* FixedTabbarView.h */,
+				1FC306811C461120007570E7 /* FixedTabbarView.m */,
+				1FC306891C4613A3007570E7 /* ScrollTabbarView.h */,
+				1FC3068A1C4613A3007570E7 /* ScrollTabbarView.m */,
+			);
+			path = TabbarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +364,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9DA8C71C41080900A9162B /* View3Controller.m in Sources */,
+				1F9DA8C11C4107F900A9162B /* View1Controller.m in Sources */,
+				1FC306851C4611A5007570E7 /* Utility.m in Sources */,
 				1F535C931BC1397100BC3A1C /* ViewController.m in Sources */,
 				1F535C901BC1397100BC3A1C /* AppDelegate.m in Sources */,
+				1FC306821C461120007570E7 /* FixedTabbarView.m in Sources */,
+				1FC3067E1C46106B007570E7 /* LRUCache.m in Sources */,
+				1FC306881C4611EB007570E7 /* TabedSlideView.m in Sources */,
+				1FC3068E1C461423007570E7 /* CustomSlideView.m in Sources */,
+				1F9DA8C41C41080100A9162B /* View2Controller.m in Sources */,
 				1F535C8D1BC1397100BC3A1C /* main.m in Sources */,
+				1FC3067A1C460F68007570E7 /* SlideView.m in Sources */,
+				1FC3068B1C4613A3007570E7 /* ScrollTabbarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +606,7 @@
 				1F535CB71BC1397100BC3A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F535CB81BC1397100BC3A1C /* Build configuration list for PBXNativeTarget "SliderViewTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +615,7 @@
 				1F535CBA1BC1397100BC3A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F535CBB1BC1397100BC3A1C /* Build configuration list for PBXNativeTarget "SliderViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +624,7 @@
 				1F535CBD1BC1397100BC3A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

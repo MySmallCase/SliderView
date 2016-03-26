@@ -26,7 +26,7 @@
     UIImageView *trackView_;
 }
 
-- (void)commonInit{
+- (void)commonInit {
     _selectedIndex = -1;
     
     backgroudView_ = [[UIImageView alloc] initWithFrame:self.bounds];
@@ -42,25 +42,25 @@
     [scrollView_ addGestureRecognizer:tap];
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder{
+- (id)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         [self commonInit];
     }
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame{
+- (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self commonInit];
     }
     return self;
 }
 
-- (void)setBackgroundImage:(UIImage *)backgroundImage{
+- (void)setBackgroundImage:(UIImage *)backgroundImage {
     backgroudView_.image = backgroundImage;
 }
 
-- (void)setTrackColor:(UIColor *)trackColor{
+- (void)setTrackColor:(UIColor *)trackColor {
     trackView_.backgroundColor = trackColor;
 }
 
@@ -102,7 +102,7 @@
     }
 }
 
-- (void)layoutSubviews{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     backgroudView_.frame = self.bounds;
@@ -110,7 +110,7 @@
     [self layoutTabbar];
 }
 
-- (void)layoutTabbar{
+- (void)layoutTabbar {
     float width = self.bounds.size.width/self.tabbarItems.count;
     float height = self.bounds.size.height;
     float x = 0.0f;
@@ -128,11 +128,11 @@
     trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, width, 1);
 }
 
-- (NSInteger)tabbarCount{
+- (NSInteger)tabbarCount {
     return self.tabbarItems.count;
 }
 
-- (void)switchingFrom:(NSInteger)fromIndex to:(NSInteger)toIndex percent:(float)percent{
+- (void)switchingFrom:(NSInteger)fromIndex to:(NSInteger)toIndex percent:(float)percent {
     FixedTabbarViewTabItem *fromItem = [self.tabbarItems objectAtIndex:fromIndex];
     UILabel *fromLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+fromIndex];
     UIImageView *fromIamge = (UIImageView *)[scrollView_ viewWithTag:kImageTagBase+fromIndex];
@@ -163,7 +163,7 @@
     trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, CGRectGetWidth(trackView_.bounds), CGRectGetHeight(trackView_.bounds));
 }
 
-- (void)setSelectedIndex:(NSInteger)selectedIndex{
+- (void)setSelectedIndex:(NSInteger)selectedIndex {
     if (_selectedIndex != selectedIndex) {
         if (_selectedIndex >= 0) {
             FixedTabbarViewTabItem *fromItem = [self.tabbarItems objectAtIndex:_selectedIndex];
@@ -193,7 +193,7 @@
     }
 }
 
-- (void)tapAction:(UITapGestureRecognizer *)tap{
+- (void)tapAction:(UITapGestureRecognizer *)tap {
     float width = self.bounds.size.width/self.tabbarItems.count;
     
     CGPoint point = [tap locationInView:scrollView_];

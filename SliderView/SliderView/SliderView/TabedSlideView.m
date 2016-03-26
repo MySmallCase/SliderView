@@ -11,7 +11,7 @@
 #import "SlideView.h"
 #import "LRUCache.h"
 
-#define kDefaultTabbarHeight 34
+#define kDefaultTabbarHeight 44
 #define kDefaultTabbarBottomSpacing 0
 #define kDefaultCacheCount 4
 
@@ -54,7 +54,7 @@
     slideView_.dataSource = self;
     [self addSubview:slideView_];
     
-    ctrlCache_ = [[LRUCache alloc] initWithCount:4];
+    ctrlCache_ = [[LRUCache alloc] initWithCount:kDefaultCacheCount];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder{
@@ -63,6 +63,7 @@
     }
     return self;
 }
+
 - (id)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self commonInit];
@@ -135,12 +136,14 @@
 - (void)SlideView:(SlideView *)slide switchingFrom:(NSInteger)oldIndex to:(NSInteger)toIndex percent:(float)percent{
     [tabbar_ switchingFrom:oldIndex to:toIndex percent:percent];
 }
+
 - (void)SlideView:(SlideView *)slide didSwitchTo:(NSInteger)index{
     [tabbar_ setSelectedIndex:index];
     if (self.delegate && [self.delegate respondsToSelector:@selector(TabedSlideView:didSelectedAt:)]) {
         [self.delegate TabedSlideView:self didSelectedAt:index];
     }
 }
+
 - (void)SlideView:(SlideView *)slide switchCanceled:(NSInteger)oldIndex{
     [tabbar_ setSelectedIndex:oldIndex];
 }

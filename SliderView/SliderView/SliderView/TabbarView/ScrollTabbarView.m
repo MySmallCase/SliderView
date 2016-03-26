@@ -18,7 +18,7 @@
 #define kViewTagBase 4000
 
 @implementation ScrollTabbarItem
-+ (ScrollTabbarItem *)itemWithTitle:(NSString *)title width:(CGFloat)width{
++ (ScrollTabbarItem *)itemWithTitle:(NSString *)title width:(CGFloat)width {
     ScrollTabbarItem *item = [[ScrollTabbarItem alloc] init];
     item.title = title;
     item.width = width;
@@ -34,7 +34,7 @@
 }
 
 
-- (void)commonInit{
+- (void)commonInit {
     _selectedIndex = -1;
     
     scrollView_ = [[UIScrollView alloc] initWithFrame:self.bounds];
@@ -46,21 +46,21 @@
     
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder{
+- (id)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         [self commonInit];
     }
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame{
+- (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self commonInit];
     }
     return self;
 }
 
-- (void)setBackgroundView:(UIView *)backgroundView{
+- (void)setBackgroundView:(UIView *)backgroundView {
     if (_backgroundView != backgroundView) {
         [_backgroundView removeFromSuperview];
         [self insertSubview:backgroundView atIndex:0];
@@ -68,7 +68,7 @@
     }
 }
 
-- (void)setTabItemNormalColor:(UIColor *)tabItemNormalColor{
+- (void)setTabItemNormalColor:(UIColor *)tabItemNormalColor {
     _tabItemNormalColor = tabItemNormalColor;
     
     for (int i=0; i<[self tabbarCount]; i++) {
@@ -80,19 +80,19 @@
     }
 }
 
-- (void)setTabItemSelectedColor:(UIColor *)tabItemSelectedColor{
+- (void)setTabItemSelectedColor:(UIColor *)tabItemSelectedColor {
     _tabItemSelectedColor = tabItemSelectedColor;
     
     UILabel *label = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+self.selectedIndex];
     label.textColor = tabItemSelectedColor;
 }
 
-- (void)setTrackColor:(UIColor *)trackColor{
+- (void)setTrackColor:(UIColor *)trackColor {
     _trackColor = trackColor;
     trackView_.backgroundColor = trackColor;
 }
 
-- (void)setTabbarItems:(NSArray *)tabbarItems{
+- (void)setTabbarItems:(NSArray *)tabbarItems {
     if (_tabbarItems != tabbarItems) {
         _tabbarItems = tabbarItems;
         
@@ -124,14 +124,14 @@
     }
 }
 
-- (void)layoutSubviews{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     self.backgroundView.frame = self.bounds;
     scrollView_.frame = self.bounds;
 }
 
-- (NSInteger)tabbarCount{
+- (NSInteger)tabbarCount {
     return self.tabbarItems.count;
 }
 
@@ -171,7 +171,7 @@
     trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, width, CGRectGetHeight(trackView_.bounds));
 }
 
-- (void)setSelectedIndex:(NSInteger)selectedIndex{
+- (void)setSelectedIndex:(NSInteger)selectedIndex {
     if (_selectedIndex != selectedIndex) {
         if (_selectedIndex >= 0) {
             UILabel *fromLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+_selectedIndex];
@@ -196,7 +196,7 @@
     }
 }
 
-- (void)tapAction:(UITapGestureRecognizer *)tap{
+- (void)tapAction:(UITapGestureRecognizer *)tap {
     NSInteger i = tap.view.tag - kViewTagBase;
     self.selectedIndex = i;
     if (self.delegate) {

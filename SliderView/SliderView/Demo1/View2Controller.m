@@ -14,6 +14,11 @@
 
 @implementation View2Controller
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"View2Controller");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

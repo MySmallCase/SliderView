@@ -36,12 +36,16 @@
     self.tabedSlideView.tabItemNormalColor = [UIColor blackColor];
     self.tabedSlideView.tabItemSelectedColor = [UIColor colorWithRed:0.833 green:0.052 blue:0.130 alpha:1.000];
     self.tabedSlideView.tabbarTrackColor = [UIColor colorWithRed:0.833 green:0.052 blue:0.130 alpha:1.000];
-    self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"];
 
-    TabedbarItem *item1 = [TabedbarItem itemWithTitle:@"最新" image:nil selectedImage:nil];
-    TabedbarItem *item2 = [TabedbarItem itemWithTitle:@"最热" image:nil selectedImage:nil];
-    TabedbarItem *item3 = [TabedbarItem itemWithTitle:@"价格" image:nil selectedImage:nil];
-    self.tabedSlideView.tabbarItems = @[item1, item2, item3];
+    NSMutableArray *itemsArray = [[NSMutableArray alloc] init];
+    NSArray *titlesArray = @[@"最新",@"最热",@"价格"];
+    
+    for (NSString *title in titlesArray) {
+        TabedbarItem *item = [TabedbarItem itemWithTitle:title image:nil selectedImage:nil];
+        [itemsArray addObject:item];
+    }
+    
+    self.tabedSlideView.tabbarItems = [itemsArray copy];
     [self.tabedSlideView buildTabbar];
     self.tabedSlideView.selectedIndex = 0;
     

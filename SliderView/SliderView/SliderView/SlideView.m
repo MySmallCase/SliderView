@@ -24,7 +24,7 @@
 
 
 
-- (void)commonInit{
+- (void)commonInit {
     oldIndex_ = -1;
     isSwitching_ = NO;
     
@@ -32,42 +32,45 @@
     [self addGestureRecognizer:pan_];
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder{
+- (id)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         [self commonInit];
     }
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame{
+- (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self commonInit];
     }
     return self;
 }
 
-- (NSInteger)selectedIndex{
+- (NSInteger)selectedIndex {
     return oldIndex_;
 }
-- (void)setSelectedIndex:(NSInteger)selectedIndex{
+
+- (void)setSelectedIndex:(NSInteger)selectedIndex {
     if (selectedIndex != oldIndex_) {
         [self switchTo:selectedIndex];
     }
 }
 
-- (void)removeOld{
+- (void)removeOld {
     [self removeCtrl:oldCtrl_];
     [oldCtrl_ endAppearanceTransition];
     oldCtrl_ = nil;
     oldIndex_ = -1;
 }
-- (void)removeWill{
+
+- (void)removeWill {
     [willCtrl_ beginAppearanceTransition:NO animated:NO];
     [self removeCtrl:willCtrl_];
     [willCtrl_ endAppearanceTransition];
     willCtrl_ = nil;
     panToIndex_ = -1;
 }
+
 - (void)showAt:(NSInteger)index{
     if (oldIndex_ != index) {
         [self removeOld];
@@ -193,6 +196,7 @@
         }
     }];
 }
+
 - (void)panHaner:(UIPanGestureRecognizer *)pan{
     if (oldIndex_ < 0) {
         return;
